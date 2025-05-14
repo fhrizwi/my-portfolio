@@ -1,3 +1,12 @@
+import {
+    Home,
+    User,
+    Briefcase,
+    BadgeCheck,
+    Folder,
+    Download,
+} from 'lucide-react';
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './ui/Button';
@@ -11,7 +20,7 @@ export default function Header() {
 
     return (
         <>
-            <header className=" text-slate-900 border-b border-slate-300 p-4 flex items-center justify-between fixed w-full top-0 z-50">
+            <header className="bg-white/70 backdrop-blur-md text-slate-900 border-b border-slate-300 p-4 flex items-center justify-between fixed w-full top-0 z-50">
                 <div className="flex items-center space-x-4">
                     <img
                         src="/vite.svg"
@@ -22,14 +31,37 @@ export default function Header() {
                 </div>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex space-x-8 items-center text-lg">
-                    <Link to="/" className="hover:text-slate-800">Home</Link>
-                    <Link to="/about" className="hover:text-slate-800">About</Link>
-                    <Link to="/works" className="hover:text-slate-800">Works</Link>
-                    <Link to="/skills" className="hover:text-slate-800">Skills</Link>
-                    <Link to="/projects">
-                        <Button ButtonName="Project" />
+                <nav className="hidden md:flex space-x-1 items-center text-lg">
+                    <Link to="/" className="flex items-center space-x-2 hover:text-blue-700 rounded-md px-3 py-1">
+                        <Home className="w-5 h-5" />
+                        <span>Home</span>
                     </Link>
+                    <Link to="/about" className="flex items-center space-x-2 hover:text-blue-700 rounded-md px-3 py-1">
+                        <User className="w-5 h-5" />
+                        <span>About</span>
+                    </Link>
+                    <Link to="/works" className="flex items-center space-x-2 hover:text-blue-700 rounded-md px-3 py-1">
+                        <Briefcase className="w-5 h-5" />
+                        <span>Works</span>
+                    </Link>
+                    <Link to="/skills" className="flex items-center space-x-2 hover:text-blue-700 rounded-md px-3 py-1">
+                        <BadgeCheck className="w-5 h-5" />
+                        <span>Skills</span>
+                    </Link>
+                    <Link to="/projects" className="flex items-center space-x-2 hover:text-blue-700 rounded-md px-3 py-1">
+                        <Folder className="w-5 h-5" />
+                        <span>Projects</span>
+                    </Link>
+                    <a
+                        href="/fhrizwiCV.pdf"
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 hover:text-blue-700 rounded-md px-3 py-1"
+                    >
+                        <Button ButtonName="Download CV" />
+                    </a>
+
                 </nav>
 
                 {/* Mobile Hamburger Menu */}
@@ -51,29 +83,46 @@ export default function Header() {
             >
                 <div className="flex justify-end p-4">
                     <button
-                        className="text-2xl"
+                        className="text-4xl"
                         onClick={toggleSidebar}
                         aria-label="Close menu"
                     >
                         ×
                     </button>
                 </div>
-                <nav className="flex flex-col space-y-4 p-4 text-lg">
-                    <Link to="/" onClick={toggleSidebar} className="hover:text-slate-800">
-                        Home
+                <nav className="flex flex-col space-y-2 p-4 text-lg">
+                    <Link to="/" onClick={toggleSidebar} className="flex items-center space-x-2 hover:text-slate-800 hover:bg-slate-100 rounded-md px-3 py-1">
+                        <Home className="w-5 h-5" />
+                        <span>Home</span>
                     </Link>
-                    <Link to="/about" onClick={toggleSidebar} className="hover:text-slate-800">
-                        About
+                    <Link to="/about" onClick={toggleSidebar} className="flex items-center space-x-2 hover:text-slate-800 hover:bg-slate-100 rounded-md px-3 py-1">
+                        <User className="w-5 h-5" />
+                        <span>About</span>
                     </Link>
-                    <Link to="/works" onClick={toggleSidebar} className="hover:text-slate-800">
-                        Works
+                    <Link to="/works" onClick={toggleSidebar} className="flex items-center space-x-2 hover:text-slate-800 hover:bg-slate-100 rounded-md px-3 py-1">
+                        <Briefcase className="w-5 h-5" />
+                        <span>Works</span>
                     </Link>
-                    <Link to="/skills" onClick={toggleSidebar} className="hover:text-slate-800">
-                        Skills
+                    <Link to="/skills" onClick={toggleSidebar} className="flex items-center space-x-2 hover:text-slate-800 hover:bg-slate-100 rounded-md px-3 py-1">
+                        <BadgeCheck className="w-5 h-5" />
+                        <span>Skills</span>
                     </Link>
-                    <Link to="/projects" onClick={toggleSidebar} className="hover:text-slate-800">
-                        Download CV
+                    <Link to="/projects" onClick={toggleSidebar} className="flex items-center space-x-2 hover:text-slate-800 hover:bg-slate-100 rounded-md px-3 py-1">
+                        <Folder className="w-5 h-5" />
+                        <span>Projects</span>
                     </Link>
+                    <a
+                        href="/fhrizwiCV.pdf"
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={toggleSidebar}
+                        className="flex items-center space-x-2 hover:text-slate-800 hover:bg-slate-100 rounded-md px-3 py-1"
+                    >
+                        <Download className="w-5 h-5" />
+                        <span>Download CV</span>
+                    </a>
+
                 </nav>
             </div>
 

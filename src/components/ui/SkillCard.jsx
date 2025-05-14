@@ -1,0 +1,27 @@
+// import React from 'react'
+
+// export default function SkillCard() {
+//   return (
+//     <div className='h-40 w-40 rounded-lg bg-slate-600 flex items-center justify-center mt-24 flex-col space-y-5'>
+//       <img src="/vite.svg" alt="SkillLogo" />
+//       <div className='items-center flex justify-center flex-col'>
+//         <h1 >React</h1>
+//         <p>Intermediate</p>
+//       </div>
+//     </div>
+//   )
+// }
+
+
+
+export default function SkillCard({ Icon, name, level }) {
+  return (
+    <div className="h-40 w-40 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center mt-6 flex-col space-y-4">
+      <Icon className="text-indigo-600 text-4xl" />
+      <div className="text-center flex flex-col gap-1">
+        <h1 className="text-gray-800 font-semibold text-lg">{name}</h1>
+        <p className="text-gray-500 text-sm">{level}</p>
+      </div>
+    </div>
+  );
+}

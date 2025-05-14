@@ -56,16 +56,24 @@ export default function Footer() {
                 {/* Right Section */}
                 <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-end">
                     <div className="space-y-6 sm:space-y-10">
-                        <h2 className="text-6xl   leading-tight font-semibold mb-4">Be Creative,<br />Be Solutive</h2>
-                        <div className="flex bg-sky-300 p-1 font-semibold border border-gray-300 rounded-full overflow-hidden">
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl leading-tight font-semibold mb-4 text-center lg:text-right">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-500 animate-pulse">
+                                Design That Talks,
+                                <br />
+                                Code That Walks.
+                            </span>
+                        </h2>
+
+
+                        <div className="flex bg-sky-300 p-1 font-medium border border-gray-300 rounded-full overflow-hidden">
                             <input
                                 type="email"
-                                placeholder="Enter your email"
+                                placeholder="Enter Your Email"
                                 className="w-72 px-4 py-2  bg-sky-300 placeholder:text-black text-black focus:outline-none"
                             />
-                            <button className="bg-black hover:bg-slate-950 rounded-full text-white p-3 rounded-r-full">
+                            <button className="bg-black flex items-center justify-center w-10 h-10 hover:bg-slate-950 rounded-full text-white p-1 rounded-r-full">
                                 <svg
-                                    class="w-8 h-8 justify-end bg-black text-gray-600 ease-linear duration-300 rounded-full  group-hover:border-none p-2 rotate-90"
+                                    class="w-6 h-6 justify-end bg-black text-gray-600 ease-linear duration-300 rounded-full p-1  group-hover:border-none rotate-90"
                                     viewBox="0 0 16 19"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
@@ -81,7 +89,7 @@ export default function Footer() {
             </footer>
 
             <div className=" text-gray-400 border-t border-gray-200 border-[1.5px] py-4 flex items-center justify-center p-3 flex-col text-xs sm:text-sm">
-                <p>© 2025 Faizul.dev. All rights reserved.</p>
+                <p>© 2025 <span className='text-sky-500'>Faizul.dev</span>. All rights reserved.</p>
             </div>
         </>
     );
