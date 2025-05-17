@@ -5,10 +5,11 @@ import HireMe from "./ui/HireMe"
 
 export default function Hero() {
   return (
-    <div className="text-black font-sans">
+    <div className="text-black font-sans ">
       {/* Hero Section */}
-      <section className="px-6 sm:px-10 lg:px-14 py-32 flex flex-col md:flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
-        {/* Left Column */}
+      <section
+        className="px-6 sm:px-10 lg:px-14 py-32 flex flex-col md:flex-row items-center justify-between gap-12 max-w-7xl mx-auto bg-[url('/banner.png')] bg-no-repeat bg-cover bg-center"
+      >
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4">
             Designing for <br className="hidden sm:block" />
@@ -66,6 +67,7 @@ export default function Hero() {
         </div>
       </section>
 
+
       {/* Marquee Section */}
       <div className="bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-4 text-sm font-medium text-center whitespace-nowrap overflow-hidden">
         <div className="inline-block animate-marquee">
@@ -98,7 +100,7 @@ export default function Hero() {
         {/* Import Social Media Section */}
         <SocialMedia />
       </section>
-        <HireMe />
+      <HireMe />
     </div>
   );
 }

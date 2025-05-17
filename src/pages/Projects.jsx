@@ -10,7 +10,6 @@ export default function Projects() {
         Latest Projects
       </p>
       <CardGrid />
-      <p>Projects Page</p>
     </div>
   );
 }

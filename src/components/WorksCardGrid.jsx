@@ -8,6 +8,11 @@ export default function WorksCardGrid() {
         { companylogo: 'https://avatars.githubusercontent.com/u/117088632?v=3' },
         { companylogo: 'https://avatars.githubusercontent.com/u/117088632?v=3' },
         { companylogo: 'https://avatars.githubusercontent.com/u/117088632?v=3' },
+        { companylogo: '/golden.png' },
+        { companylogo: '/golden.png' },
+        { companylogo: '/golden.png' },
+        { companylogo: '/golden.png' },
+        { companylogo: '/vite.svg' },
         { companylogo: '/vite.svg' },
     ];
 

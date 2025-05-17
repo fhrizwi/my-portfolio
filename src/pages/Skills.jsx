@@ -11,7 +11,6 @@ export default function Skills() {
         Projects
       </p>
       <SkillCardGrid />
-      <p>Skills Page</p>
     </div>
   );
 }

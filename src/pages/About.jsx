@@ -7,7 +7,6 @@ export default function About() {
       <div className='mt-20'>
       </div>
       <AboutContent />
-      <p>This is the About Page</p>
     </div>
   );
 }
