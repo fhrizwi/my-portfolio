@@ -51,7 +51,7 @@ export default function Hero() {
             <div className="w-full lg:w-1/2 relative">
               <div className="relative max-w-md mx-auto">
                 <img
-                  src="/mypic.png"
+                  src="/4989bf44-45e3-452c-ad34-049246b3f86a.png"
                   alt="Designer"
                   className="w-full object-cover rounded-t-3xl lg:rounded-3xl"
                 />
