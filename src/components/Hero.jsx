@@ -50,7 +50,7 @@ export default function Hero() {
         {/* Right Column */}
         <div className="flex-1 relative mt-8 md:mt-0">
           <img
-            src="/vite.svg"
+            src="/mypic.png"
             alt="Designer"
             className="rounded-2xl w-full max-w-sm mx-auto"
           />
