@@ -23,9 +23,9 @@ export default function Header() {
             <header className="bg-white/70 backdrop-blur-md text-slate-900 border-b border-slate-300 p-4 flex items-center justify-between fixed w-full top-0 z-50">
                 <div className="flex items-center space-x-4">
                     <img
-                        src="/vite.svg"
+                        src="/logo.svg"
                         alt="Logo"
-                        className="h-10 w-10 rounded-full"
+                        className="h-10 w-10 "
                     />
                     <span className="text-xl sm:text-2xl font-bold">Faizul.dev</span>
                 </div>

@@ -12,13 +12,14 @@ export default function Hero() {
       >
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4">
-            Designing for <br className="hidden sm:block" />
-            Amazing <br className="hidden sm:block" />
-            People
+            Building Seamless <br className="hidden sm:block" />
+            Digital Experiences <br className="hidden sm:block" />
+            with Code & Creativity
           </h1>
           <p className="text-gray-600 mb-6 text-base sm:text-lg">
-            Designing user interfaces for over 10 years as visual designer
+            Passionate web developer dedicated to crafting clean, functional, and impactful websites that make a difference.
           </p>
+
           <div className="flex justify-center md:justify-start">
             <Button ButtonName="Hire Me!" buttonColor="red" />
           </div>
