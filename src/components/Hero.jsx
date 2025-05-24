@@ -5,22 +5,20 @@ import HireMe from "./ui/HireMe"
 
 export default function Hero() {
   return (
-    <div className="text-black font-sans ">
+    <div className="text-black font-sans">
       {/* Hero Section */}
-      <section
-        className="px-6 sm:px-10 lg:px-14 py-32 flex flex-col md:flex-row items-center justify-between gap-12 max-w-7xl mx-auto bg-[url('/banner.png')] bg-no-repeat bg-cover bg-center"
-      >
+      <section className="px-4 sm:px-6 lg:px-14 py-20 sm:py-32 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 max-w-7xl mx-auto bg-[url('/banner.png')] bg-no-repeat bg-cover bg-center">
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
             Building Seamless <br className="hidden sm:block" />
             Digital Experiences <br className="hidden sm:block" />
             with Code & Creativity
           </h1>
-          <p className="text-gray-600 mb-6 text-base sm:text-lg">
+          <p className="text-gray-600 mb-6 text-base sm:text-lg max-w-2xl mx-auto md:mx-0">
             Passionate web developer dedicated to crafting clean, functional, and impactful websites that make a difference.
           </p>
 
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start mb-8 md:mb-0">
             <Button ButtonName="Hire Me!" buttonColor="red" />
           </div>
 
@@ -47,27 +45,28 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Column */}
-        <div className="flex-1 relative mt-8 md:mt-0">
-          <img
-            src="/mypic.png"
-            alt="Designer"
-            className="rounded-2xl w-full max-w-sm mx-auto"
-          />
+        {/* Right Column with Image and Tags */}
+        <div className="flex-1 relative max-w-sm mx-auto md:max-w-md lg:max-w-lg">
+          <div className="relative">
+            <img
+              src="/mypic.png"
+              alt="Designer"
+              className="rounded-2xl w-full h-auto object-cover"
+            />
 
-          {/* Tags */}
-          <span className="absolute top-16 right-4 sm:right-20 bg-yellow-300 px-3 py-1 text-sm font-semibold rounded-full">
-            UI/UX Designer
-          </span>
-          <span className="absolute bottom-32 right-4 sm:right-12 bg-green-300 px-3 py-1 text-sm font-semibold rounded-full">
-            Product Designer
-          </span>
-          <span className="absolute bottom-12 left-4 bg-blue-300 px-3 py-1 text-sm font-semibold rounded-full">
-            Webflow Developer
-          </span>
+            {/* Tags with improved responsive positioning */}
+            <span className="absolute top-4 md:top-8 right-2 md:right-4 lg:right-8 bg-yellow-300 px-3 py-1 text-sm font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform">
+              UI/UX Designer
+            </span>
+            <span className="absolute bottom-20 md:bottom-24 right-2 md:right-4 bg-green-300 px-3 py-1 text-sm font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform">
+              Product Designer
+            </span>
+            <span className="absolute bottom-4 md:bottom-8 left-2 md:left-4 bg-blue-300 px-3 py-1 text-sm font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform">
+              Webflow Developer
+            </span>
+          </div>
         </div>
       </section>
-
 
       {/* Marquee Section */}
       <div className="bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-4 text-sm font-medium text-center whitespace-nowrap overflow-hidden">
@@ -77,7 +76,6 @@ export default function Hero() {
             .join(" ✦ ")}
         </div>
       </div>
-
 
       {/* Simple Design Section */}
       <section className="px-6 py-16 max-w-4xl mx-auto text-center">
