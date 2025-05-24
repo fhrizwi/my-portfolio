@@ -51,17 +51,17 @@ export default function Hero() {
             <img
               src="/mypic.png"
               alt="Designer"
-              className="rounded-2xl w-full h-auto object-cover"
+              className="w-full h-auto object-cover rounded-t-2xl md:rounded-2xl"
             />
 
-            {/* Tags with improved responsive positioning */}
-            <span className="absolute top-4 md:top-8 right-2 md:right-4 lg:right-8 bg-yellow-300 px-3 py-1 text-sm font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform">
+            {/* Tags with improved positioning */}
+            <span className="absolute top-4 right-4 bg-yellow-300 px-3 py-1 text-sm font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform">
               UI/UX Designer
             </span>
-            <span className="absolute bottom-20 md:bottom-24 right-2 md:right-4 bg-green-300 px-3 py-1 text-sm font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform">
+            <span className="absolute bottom-20 right-4 bg-green-300 px-3 py-1 text-sm font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform">
               Product Designer
             </span>
-            <span className="absolute bottom-4 md:bottom-8 left-2 md:left-4 bg-blue-300 px-3 py-1 text-sm font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform">
+            <span className="absolute bottom-4 left-4 bg-blue-300 px-3 py-1 text-sm font-semibold rounded-full shadow-lg transform hover:scale-105 transition-transform">
               Webflow Developer
             </span>
           </div>
