@@ -48,27 +48,27 @@ export default function Hero() {
             </div>
 
             {/* Right Image Section */}
-            <div className="w-full lg:w-1/2 relative">
+            <div className="lg:w-[35%] relative lg:mr-4 w-[300px]">
               <div className="relative max-w-md mx-auto">
                 <img
                   src="/mypic.png"
                   alt="Designer"
                   className="w-full object-cover rounded-t-3xl lg:rounded-3xl"
                 />
-                
+
                 {/* Tags */}
-                <div className="absolute top-6 right-6">
+                <div className="absolute bottom-48 left-6">
                   <span className="bg-yellow-300 px-4 py-2 text-sm font-semibold rounded-full shadow-lg inline-block transform hover:scale-105 transition-transform">
                     UI/UX Designer
                   </span>
                 </div>
-                
+
                 <div className="absolute bottom-32 right-6">
                   <span className="bg-green-300 px-4 py-2 text-sm font-semibold rounded-full shadow-lg inline-block transform hover:scale-105 transition-transform">
                     Product Designer
                   </span>
                 </div>
-                
+
                 <div className="absolute bottom-12 left-6">
                   <span className="bg-blue-300 px-4 py-2 text-sm font-semibold rounded-full shadow-lg inline-block transform hover:scale-105 transition-transform">
                     Webflow Developer
@@ -81,36 +81,33 @@ export default function Hero() {
       </section>
 
       {/* Marquee Section */}
-      <div className="bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-4">
-        <div className="flex overflow-hidden">
-          <div className="animate-marquee whitespace-nowrap">
-            {Array(20).fill("Design ★ Develop ★ Discover").join(" ✦ ")}
-          </div>
+      <div className="bg-[radial-gradient(circle_at_30%_30%,_rgba(255,200,200,0.8),_rgba(180,220,255,0.9))] text-black py-3 overflow-hidden relative">
+        <div className="whitespace-nowrap animate-slide px-4">
+          {Array(10).fill("✦ Code with Purpose ✦ Design with Passion ✦ Build for Users").join("   ")}
         </div>
       </div>
+
+
+
 
       {/* Simple Design Section */}
       <section className="px-6 py-16 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-          I like to make simple and elegant designs
+          "Simplicity isn’t just a style — it’s a strategy. <br />I build with clarity, purpose, and precision."
         </h2>
         <p className="text-gray-600 text-lg mb-6">
-          As a UI/UX designer with over 10 years of experience in the field, I am responsible
-          for creating user interfaces and experiences that are intuitive, visually appealing,
-          and easy to use.
+          I'm a passionate Web Developer with a strong interest in creating clean, simple, and user-friendly designs. With a background in UI/UX design and a keen eye for detail, I focus on building websites and web apps that are both functional and visually appealing.
         </p>
         <p className="text-gray-600 text-lg mb-6">
-          With over a decade of experience, I likely worked on a wide range of projects and have
-          developed a strong understanding of user needs and design principles.
+          Though I’m at the beginning of my professional journey, I’ve spent years exploring design principles, learning modern web technologies, and working on personal and academic projects that reflect my commitment to intuitive user experiences.
         </p>
         <p className="text-gray-600 text-lg">
-          Overall, my extensive experience in UI/UX design makes me a valuable asset to any team or
-          project that requires intuitive and user-friendly interfaces.
+          I enjoy combining design and development to bring ideas to life — whether it’s a responsive landing page, a smooth login experience, or a full-featured web app. I'm always excited to learn new tools and improve my skills with every project.
         </p>
 
         <SocialMedia />
       </section>
-      
+
       <HireMe />
     </div>
   );

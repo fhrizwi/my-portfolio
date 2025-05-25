@@ -5,8 +5,8 @@ export default function Footer() {
         <>
             <footer className="bg-white text-gray-800 flex flex-col lg:flex-row gap-8 p-4 sm:p-8 lg:p-16 justify-between items-start lg:items-center border-t border-gray-200 border-[1.5px] mt-10">
                 <div className="flex flex-col gap-8 w-full">
-                    <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 ">
-
+                    {/* First Row: Navigation and Services (side-by-side on mobile and desktop) */}
+                    <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-row sm:gap-16">
                         {/* Navigation */}
                         <div>
                             <h3 className="font-semibold mb-2 text-base sm:text-lg">Navigation</h3>
@@ -29,8 +29,8 @@ export default function Footer() {
                             </ul>
                         </div>
 
-                        {/* Social Media */}
-                        <div>
+                        {/* Social Media (hidden on mobile, shown on desktop) */}
+                        <div className="hidden sm:block">
                             <h3 className="font-semibold mb-2 text-base sm:text-lg">Social Media</h3>
                             <div className="text-gray-500 text-sm sm:text-base flex flex-col items-start space-y-1">
                                 <a href="https://github.com/fhrizwi" className="hover:text-sky-500" target="_blank" rel="noopener noreferrer">Github</a>
@@ -41,14 +41,28 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Information */}
-                    <div>
-                        <h3 className="font-semibold mb-2 text-base sm:text-lg">Information</h3>
-                        <ul className="text-gray-500 text-sm sm:text-base space-y-2">
-                            <li >faizulhaque2002@gmail.com</li>
-                            <li >Hostel-16 MMDU Mullana, Ambala, Haryana, 133207</li>
-                            <li >(+91) 6206957650</li>
-                        </ul>
+                    {/* Second Row: Social Media and Information (side-by-side on mobile, Information only on desktop) */}
+                    <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-row sm:gap-16">
+                        {/* Social Media (shown on mobile, hidden on desktop) */}
+                        <div className="block sm:hidden">
+                            <h3 className="font-semibold mb-2 text-base sm:text-lg">Social Media</h3>
+                            <div className="text-gray-500 text-sm sm:text-base flex flex-col items-start space-y-1">
+                                <a href="https://github.com/fhrizwi" className="hover:text-sky-500" target="_blank" rel="noopener noreferrer">Github</a>
+                                <a href="https://www.linkedin.com/in/faizul-haque-rizwi-2aa05732a/" className="hover:text-sky-500" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <a href="https://instagram.com/fhrizwi" className="hover:text-sky-500" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                <a href="https://twitter.com/fhrizwi" className="hover:text-sky-500" target="_blank" rel="noopener noreferrer">Twitter</a>
+                            </div>
+                        </div>
+
+                        {/* Information */}
+                        <div>
+                            <h3 className="font-semibold mb-2 text-base sm:text-lg">Information</h3>
+                            <ul className="text-gray-500 text-sm sm:text-base space-y-2">
+                                <li>faizulhaque2002@gmail.com</li>
+                                <li>Hostel-16 MMDU Mullana, Ambala, Haryana, 133207</li>
+                                <li>(+91) 6206957650</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -64,7 +78,7 @@ export default function Footer() {
                         </h2>
 
                         {/* Email Form */}
-                        <div className="flex bg-sky-300 p-1 font-medium border border-gray-300 rounded-full overflow-hidden">
+                        <div className="flex justify-between bg-sky-300 p-1 font-medium border border-gray-300 rounded-full overflow-hidden">
                             <input
                                 type="email"
                                 placeholder="Enter Your Email"
@@ -88,7 +102,7 @@ export default function Footer() {
             </footer>
 
             <div className="text-gray-400 border-t border-gray-200 border-[1.5px] py-4 flex items-center justify-center p-3 flex-col text-xs sm:text-sm">
-                <p className="hover:text-sky-500 transition duration-300">© 2025 <span className='text-sky-500 hover:text-indigo-500'>Faizul.dev</span>. All rights reserved.</p>
+                <p className="hover:text-sky-500 transition duration-300">© 2025 Faizul.dev. All rights reserved.</p>
             </div>
         </>
     );

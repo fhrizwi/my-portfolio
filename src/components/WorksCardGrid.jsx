@@ -4,15 +4,7 @@ import WorksCard from './ui/WorksCard';
 export default function WorksCardGrid() {
     const worksData = [
         { companylogo: 'https://avatars.githubusercontent.com/u/117088632?v=3' },
-        { companylogo: 'https://avatars.githubusercontent.com/u/117088632?v=3' },
-        { companylogo: 'https://avatars.githubusercontent.com/u/117088632?v=3' },
-        { companylogo: 'https://avatars.githubusercontent.com/u/117088632?v=3' },
-        { companylogo: 'https://avatars.githubusercontent.com/u/117088632?v=3' },
-        { companylogo: '/golden.png' },
-        { companylogo: '/golden.png' },
-        { companylogo: '/golden.png' },
-        { companylogo: '/golden.png' },
-        { companylogo: '/vite.svg' },
+        { companylogo: '/mypic.png' },
         { companylogo: '/vite.svg' },
     ];
 

@@ -1,30 +1,11 @@
-// import React from 'react'
-
-// export default function Card() {
-//     return (
-//         <div className='h-72 w-80 rounded-lg bg-slate-600 mt-24 flex flex-col items-center justify-center space-y-6'>
-//             <div className='h-40 w-64 rounded-lg bg-slate-300'></div>
-//             <div className='space-y-1 '>
-//                 <div>
-//                     <h1 className='text-2xl font-semibold '>Chat Dashboard</h1>
-//                 </div>
-//                 <div className='flex items-center justify-between space-x-8 '>
-//                     <button>UI/UX</button>
-//                     <button>Product Design</button>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-
-import React from 'react';
-
-export default function Card({ title, tags, image }) {
+export default function Card({ title, tags, image, link }) {
     return (
-
-        
-        <div className="h-80 w-80 rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center justify-center space-y-6 p-4">
+        <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-80 w-80 rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center justify-center space-y-6 p-4 no-underline"
+        >
             {/* Image Preview */}
             <div className="h-52 w-72 rounded-xl overflow-hidden bg-slate-200 flex items-center justify-center">
                 {image ? (
@@ -43,16 +24,18 @@ export default function Card({ title, tags, image }) {
                     {tags.map((tag, index) => (
                         <button
                             key={index}
-                            className={`px-3 py-1 rounded-full text-sm font-medium transition ${tag === 'UI/UX'
-                                ? 'bg-blue-100 text-blue-600 hover:bg-blue-200'
-                                : 'bg-green-100 text-green-600 hover:bg-green-200'
-                                }`}
+                            className={`px-3 py-1 rounded-full text-sm font-medium transition ${
+                                tag === 'UI/UX'
+                                    ? 'bg-blue-100 text-blue-600 hover:bg-blue-200'
+                                    : 'bg-green-100 text-green-600 hover:bg-green-200'
+                            }`}
+                            disabled
                         >
                             {tag}
                         </button>
                     ))}
                 </div>
             </div>
-        </div>
+        </a>
     );
 }

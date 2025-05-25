@@ -13,7 +13,7 @@ export default function SocialMedia() {
           target="_blank"
           rel="noopener noreferrer"
           title="GitHub"
-          className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center p-4 rounded-full text-2xl text-slate-700 hover:text-black"
+          className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform  hover:scale-105 flex items-center justify-center p-4 rounded-full text-2xl text-slate-700 hover:text-black"
         >
           <FaGithub />
         </a>
@@ -24,7 +24,7 @@ export default function SocialMedia() {
           target="_blank"
           rel="noopener noreferrer"
           title="LinkedIn"
-          className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center p-4 rounded-full text-2xl text-slate-700 hover:text-sky-700"
+          className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform  hover:scale-105 flex items-center justify-center p-4 rounded-full text-2xl text-slate-700 hover:text-sky-700"
         >
           <FaLinkedin />
         </a>
@@ -35,7 +35,7 @@ export default function SocialMedia() {
           target="_blank"
           rel="noopener noreferrer"
           title="Twitter"
-          className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center p-4 rounded-full text-2xl text-slate-700 hover:text-sky-500"
+          className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform  hover:scale-105 flex items-center justify-center p-4 rounded-full text-2xl text-slate-700 hover:text-sky-500"
         >
           <FaTwitter />
         </a>
@@ -46,7 +46,7 @@ export default function SocialMedia() {
           target="_blank"
           rel="noopener noreferrer"
           title="Instagram"
-          className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center p-4 rounded-full text-2xl text-slate-700 hover:text-pink-500"
+          className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform  hover:scale-105 flex items-center justify-center p-4 rounded-full text-2xl text-slate-700 hover:text-pink-500"
         >
           <FaInstagram />
         </a>

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Chat Dashboard",
+    "tags": ["UI/UX", "Product Design"],
+    "image": "https://picsum.photos/300/160?random=1",
+    "link": "https://github.com/yourusername/chat-dashboard"
+  },
+  {
+    "title": "Finance App",
+    "tags": ["UI/UX", "Web Design"],
+    "image": "https://picsum.photos/300/160?random=2",
+    "link": "https://github.com/yourusername/finance-app"
+  },
+  {
+    "title": "Portfolio Site",
+    "tags": ["UI/UX"],
+    "image": "https://picsum.photos/300/160?random=3",
+    "link": "https://github.com/yourusername/portfolio-site"
+  },
+  {
+    "title": "Analytics Tool",
+    "tags": ["Product Design"],
+    "image": "https://picsum.photos/300/160?random=4",
+    "link": "https://github.com/yourusername/analytics-tool"
+  },
+  {
+    "title": "E-commerce UI",
+    "tags": ["UI/UX", "Web Design"],
+    "image": "https://picsum.photos/300/160?random=5",
+    "link": "https://github.com/yourusername/ecommerce-ui"
+  },
+  {
+    "title": "Fitness Tracker",
+    "tags": ["UI/UX", "Product Design"],
+    "image": "https://picsum.photos/300/160?random=6",
+    "link": "https://github.com/yourusername/fitness-tracker"
+  }
+]
