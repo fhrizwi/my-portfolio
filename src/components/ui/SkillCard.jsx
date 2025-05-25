@@ -1,19 +1,3 @@
-// import React from 'react'
-
-// export default function SkillCard() {
-//   return (
-//     <div className='h-40 w-40 rounded-lg bg-slate-600 flex items-center justify-center mt-24 flex-col space-y-5'>
-//       <img src="/vite.svg" alt="SkillLogo" />
-//       <div className='items-center flex justify-center flex-col'>
-//         <h1 >React</h1>
-//         <p>Intermediate</p>
-//       </div>
-//     </div>
-//   )
-// }
-
-
-
 export default function SkillCard({ Icon, name, level }) {
   return (
     <div className="h-40 w-40 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300  flex items-center justify-center mt-6 flex-col space-y-4">
