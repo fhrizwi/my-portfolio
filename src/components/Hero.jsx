@@ -10,17 +10,15 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-0">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             {/* Left Content */}
-            <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 
-               bg-gradient-to-b lg:bg-gradient-to-r 
-               from-black to-gray-500 
-               text-transparent bg-clip-text drop-shadow-sm">
+            <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0 overflow-visible">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.2] 
+                 bg-gradient-to-b lg:bg-gradient-to-r 
+                 from-black to-gray-500 
+                 text-transparent bg-clip-text drop-shadow-sm pt-4 pb-6">
                 Crafting Seamless <br />
                 Digital Experiences <br />
                 through Code & Creativity
               </h1>
-
-
               <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto lg:mx-0">
                 Passionate web developer dedicated to crafting clean, functional, and impactful websites that make a difference.
               </p>
