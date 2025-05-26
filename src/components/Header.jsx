@@ -23,7 +23,7 @@ export default function Header() {
 
     return (
         <>
-            <header className="bg-white/70 backdrop-blur-md text-slate-900 border-b border-slate-300 p-4 flex items-center justify-between fixed w-full top-0 z-50">
+            <header className="bg-white/70  h-[70px] backdrop-blur-md text-slate-900 border-b border-slate-300 p-4 flex items-center justify-between fixed w-full top-0 z-50">
                 <div className="flex items-center space-x-4">
                     <img src="/logo.svg" alt="Logo" className="h-10 w-10" />
                     <span className="text-xl sm:text-2xl font-bold">Faizul.dev</span>
@@ -45,13 +45,13 @@ export default function Header() {
                         <User className="w-5 h-5" />
                         <span>About</span>
                     </Link>
-                    <Link
+                    {/* <Link
                         to="/works"
                         className={`flex items-center space-x-2 rounded-md px-3 py-1 ${isActive('/works') ? 'text-blue-700 font-normal' : 'hover:text-blue-700'}`}
                     >
                         <Briefcase className="w-5 h-5" />
                         <span>Works</span>
-                    </Link>
+                    </Link> */}
                     <Link
                         to="/skills"
                         className={`flex items-center space-x-2 rounded-md px-3 py-1 ${isActive('/skills') ? 'text-blue-700 font-normal' : 'hover:text-blue-700'}`}
@@ -119,14 +119,14 @@ export default function Header() {
                         <User className="w-5 h-5" />
                         <span>About</span>
                     </Link>
-                    <Link
+                    {/* <Link
                         to="/works"
                         onClick={toggleSidebar}
                         className={`flex items-center space-x-2 px-3 py-2 border-b border-slate-200 ${isActive('/works') ? 'text-blue-700 font-semibold' : 'hover:text-slate-800 hover:bg-slate-100'}`}
                     >
                         <Briefcase className="w-5 h-5" />
                         <span>Works</span>
-                    </Link>
+                    </Link> */}
                     <Link
                         to="/skills"
                         onClick={toggleSidebar}

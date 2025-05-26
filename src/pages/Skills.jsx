@@ -5,7 +5,7 @@ import SkillCardGrid from '../components/SkillCardGrid';
 export default function Skills() {
   return (
     <div>
-      <div className='mt-20'>
+      <div className='mt-16'>
       </div>
       <p className="h-16 flex items-center p-10 text-3xl font-semibold bg-white "
         style={{

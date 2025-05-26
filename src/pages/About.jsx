@@ -4,7 +4,7 @@ import AboutContent from '../components/AboutContent';
 export default function About() {
   return (
     <div>
-      <div className='mt-20'>
+      <div className='mt-16'>
       </div>
       <AboutContent />
     </div>
