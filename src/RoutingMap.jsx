@@ -15,7 +15,7 @@ import Test from './pages/Test';
 export default function RoutingMap() {
   return (
     <BrowserRouter>
-      <ScrollToTop /> {/* ✅ Add here just after BrowserRouter */}
+      <ScrollToTop /> {/* Add here just after BrowserRouter */}
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
