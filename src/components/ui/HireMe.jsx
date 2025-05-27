@@ -12,8 +12,8 @@ export default function HireMe() {
       {/* Text Section */}
       <h2 className="text-3xl md:text-4xl font-semibold max-w-xl text-center md:text-left z-10">
         See the impact of good, <br />
-        conversion-oriented design on <br />
-        your business.
+        conversion-oriented design <br />
+        on your business.
       </h2>
 
       {/* Button */}
