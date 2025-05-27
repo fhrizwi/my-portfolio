@@ -1,126 +1,73 @@
 import React from "react";
 
 export default function Footer() {
+  const underlineHover =
+    "w-fit hover:text-sky-500 cursor-pointer relative after:block after:w-full after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left";
+
   return (
     <>
       <footer className="bg-white text-gray-800 flex flex-col lg:flex-row gap-8 p-4 sm:p-8 lg:p-16 justify-between items-start lg:items-center border-t-[1.5px] mt-10">
         <div className="flex flex-col gap-8 w-full">
-          {/* First Row: Navigation and Services (side-by-side on mobile and desktop) */}
+          {/* First Row: Navigation and Services */}
           <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-row sm:gap-16">
             {/* Navigation */}
             <div>
-              <h3 className="font-semibold mb-2 text-base sm:text-lg">
-                Navigation
-              </h3>
+              <h3 className="font-semibold mb-2 text-base sm:text-lg">Navigation</h3>
               <ul className="space-y-1 text-gray-500 text-sm sm:text-base">
-                <li className="hover:text-sky-500 cursor-pointer">Home</li>
-                <li className="hover:text-sky-500 cursor-pointer">About</li>
-                <li className="hover:text-sky-500 cursor-pointer">Expertise</li>
-                <li className="hover:text-sky-500 cursor-pointer">
-                  Website Service
-                </li>
+                <li className={underlineHover}>Home</li>
+                <li className={underlineHover}>About</li>
+                <li className={underlineHover}>Expertise</li>
+                <li className={underlineHover}>Website Service</li>
               </ul>
             </div>
 
             {/* Services */}
             <div>
-              <h3 className="font-semibold mb-2 text-base sm:text-lg">
-                Services
-              </h3>
+              <h3 className="font-semibold mb-2 text-base sm:text-lg">Services</h3>
               <ul className="space-y-1 text-gray-500 text-sm sm:text-base">
-                <li className="hover:text-sky-500 cursor-pointer">Branding</li>
-                <li className="hover:text-sky-500 cursor-pointer">
-                  UI/UX Design
-                </li>
-                <li className="hover:text-sky-500 cursor-pointer">
-                  Development
-                </li>
-                <li className="hover:text-sky-500 cursor-pointer">
-                  Digital Marketing
-                </li>
+                <li className={underlineHover}>Branding</li>
+                <li className={underlineHover}>UI/UX Design</li>
+                <li className={underlineHover}>Development</li>
+                <li className={underlineHover}>Digital Marketing</li>
               </ul>
             </div>
 
-            {/* Social Media (hidden on mobile, shown on desktop) */}
+            {/* Social Media (desktop only) */}
             <div className="hidden sm:block">
-              <h3 className="font-semibold mb-2 text-base sm:text-lg">
-                Social Media
-              </h3>
+              <h3 className="font-semibold mb-2 text-base sm:text-lg">Social Media</h3>
               <div className="text-gray-500 text-sm sm:text-base flex flex-col items-start space-y-1">
-                <a
-                  href="https://github.com/fhrizwi"
-                  className="hover:text-sky-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/fhrizwi" target="_blank" rel="noopener noreferrer" className={underlineHover}>
                   Github
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/faizul-haque-rizwi-2aa05732a/"
-                  className="hover:text-sky-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.linkedin.com/in/faizul-haque-rizwi-2aa05732a/" target="_blank" rel="noopener noreferrer" className={underlineHover}>
                   LinkedIn
                 </a>
-                <a
-                  href="https://instagram.com/fhrizwi"
-                  className="hover:text-sky-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://instagram.com/fhrizwi" target="_blank" rel="noopener noreferrer" className={underlineHover}>
                   Instagram
                 </a>
-                <a
-                  href="https://twitter.com/fhrizwi"
-                  className="hover:text-sky-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://twitter.com/fhrizwi" target="_blank" rel="noopener noreferrer" className={underlineHover}>
                   Twitter
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Second Row: Social Media and Information (side-by-side on mobile, Information only on desktop) */}
+          {/* Second Row: Social Media (mobile) + Information */}
           <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-row sm:gap-16">
-            {/* Social Media (shown on mobile, hidden on desktop) */}
+            {/* Social Media (mobile only) */}
             <div className="block sm:hidden">
-              <h3 className="font-semibold mb-2 text-base sm:text-lg">
-                Social Media
-              </h3>
+              <h3 className="font-semibold mb-2 text-base sm:text-lg">Social Media</h3>
               <div className="text-gray-500 text-sm sm:text-base flex flex-col items-start space-y-1">
-                <a
-                  href="https://github.com/fhrizwi"
-                  className="hover:text-sky-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/fhrizwi" target="_blank" rel="noopener noreferrer" className={underlineHover}>
                   Github
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/faizul-haque-rizwi-2aa05732a/"
-                  className="hover:text-sky-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.linkedin.com/in/faizul-haque-rizwi-2aa05732a/" target="_blank" rel="noopener noreferrer" className={underlineHover}>
                   LinkedIn
                 </a>
-                <a
-                  href="https://instagram.com/fhrizwi"
-                  className="hover:text-sky-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://instagram.com/fhrizwi" target="_blank" rel="noopener noreferrer" className={underlineHover}>
                   Instagram
                 </a>
-                <a
-                  href="https://twitter.com/fhrizwi"
-                  className="hover:text-sky-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://twitter.com/fhrizwi" target="_blank" rel="noopener noreferrer" className={underlineHover}>
                   Twitter
                 </a>
               </div>
@@ -128,9 +75,7 @@ export default function Footer() {
 
             {/* Information */}
             <div>
-              <h3 className="font-semibold mb-2 text-base sm:text-lg">
-                Information
-              </h3>
+              <h3 className="font-semibold mb-2 text-base sm:text-lg">Information</h3>
               <ul className="text-gray-500 text-sm sm:text-base space-y-2">
                 <li>faizulhaque2002@gmail.com</li>
                 <li>Hostel-16 MMDU Mullana, Ambala, Haryana, 133207</li>
