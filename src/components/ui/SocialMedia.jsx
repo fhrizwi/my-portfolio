@@ -9,7 +9,7 @@ export default function SocialMedia() {
       <div className="flex gap-6">
         {/* GitHub */}
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/fhrizwi"
           target="_blank"
           rel="noopener noreferrer"
           title="GitHub"
@@ -20,7 +20,7 @@ export default function SocialMedia() {
 
         {/* LinkedIn */}
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://linkedin.com/in/fhrizwi"
           target="_blank"
           rel="noopener noreferrer"
           title="LinkedIn"
@@ -31,7 +31,7 @@ export default function SocialMedia() {
 
         {/* Twitter */}
         <a
-          href="https://twitter.com/yourusername"
+          href="https://twitter.com/fhrizwi"
           target="_blank"
           rel="noopener noreferrer"
           title="Twitter"
@@ -42,7 +42,7 @@ export default function SocialMedia() {
 
         {/* Instagram */}
         <a
-          href="https://instagram.com/yourusername"
+          href="https://instagram.com/faizulhaque_77"
           target="_blank"
           rel="noopener noreferrer"
           title="Instagram"
